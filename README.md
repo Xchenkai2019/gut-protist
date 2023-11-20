@@ -18,3 +18,4 @@ Rscript gut-protist.enrich.r
 </br>
 ```
 
+![cow enrichment](https://github.com/Xchenkai2019/gut-protist/assets/54092076/2cff2d2e-0e33-4efe-85b3-13203da6573f)
