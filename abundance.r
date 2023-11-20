@@ -6,7 +6,7 @@ library(ggplot2)
 theme_set(theme_bw())
 
 ##extract protist relativate abundance across each taxon
-setwd("F:/³ÌÐò/github/gut-protist/")
+setwd("F:/script/github/gut-protist/")
 sample_info_18S<-read.delim('1264_sample_infor_18s',header = TRUE,sep = "\t", row.names = 1,stringsAsFactors = FALSE)
 otu_table_18S<-read.delim('1264_OTU_table_18s',header = TRUE,sep = "\t", row.names = 1,stringsAsFactors = FALSE)
 taxonomy_table_18S<-read.delim('taxonomy_table_18s',header = TRUE,sep = "\t", row.names = 1,stringsAsFactors = FALSE)
