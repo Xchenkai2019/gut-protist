@@ -4,7 +4,7 @@ library(edgeR)
 library(tidyverse)
 
 #step2 Enrichment analyses
-setwd("F:/³ÌÐò/github/gut-protist/")
+setwd("F:/script/github/gut-protist/")
 otu_relative <- apply(otu_table, 2, function(x){x/sum(x)})
   if (missing(threshold))
     threshold = 0.0005
@@ -99,11 +99,11 @@ taxonomy <- read.delim("taxonomy.txt", header = TRUE,
 
 design <- data.frame(
   samples = colnames(otu),
-  group = rep(c("KO", "WT", "OE" ),each = 6))
+  group = rep(c("DP", "NP" ),each = 6))
 
 ## Running enrichment_analyses
 
-data <- enrichment_analyses(otu_table = otu, design = design, taxonomy_table = taxonomy, contrasts = "KO-WT")
+data <- enrichment_analyses(otu_table = otu, design = design, taxonomy_table = taxonomy, contrasts = "DP-NP")
 
 FDR <- threshold_line(data = data)
 
